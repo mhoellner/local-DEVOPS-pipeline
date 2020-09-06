@@ -10,6 +10,7 @@ services:
             - ./volumes/sonarqube_logs:/opt/sonarqube/logs
 
     buildenv:
+        image: buildenv-dotnet:3.1.200
         build: 
             context: .
             dockerfile: ./buildenv/Dockerfile

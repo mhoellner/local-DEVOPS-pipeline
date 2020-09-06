@@ -10,4 +10,6 @@ RUN apt update && \
 
 # install SonarScanner as .NET Core Global Tool
 RUN dotnet tool install --global dotnet-sonarscanner
-ENV PATH=${PATH}:/root/.dotnet/tools/
+ENV PATH=${PATH}:/root/.dotnet/tools
+
+WORKDIR /app
